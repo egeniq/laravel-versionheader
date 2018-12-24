@@ -1,0 +1,40 @@
+{
+  "name": "egeniq/laravel-versionheader",
+  "description": "A Laravel package that adds a HTTP header with version info.",
+  "homepage": "https://github.com/egeniq/laravel-versionheader",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Andries Seutens",
+      "email": "andries@egeniq.com"
+    },
+    {
+      "name": "Richard Tuin",
+      "email": "richard@egeniq.com"
+    }
+  ],
+  "require": {
+    "illuminate/http": "^5.1",
+    "illuminate/support": "^5.1"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^7.5"
+  },
+  "autoload": {
+    "psr-4": {
+      "Egeniq\\Laravel\\VersionHeader\\": "src"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Egeniq\\Laravel\\VersionHeader\\Test\\": "tests"
+    }
+  },
+  "extra": {
+    "laravel": {
+      "providers": [
+        "Egeniq\\Laravel\\VersionHeader\\VersionHeaderServiceProvider"
+      ]
+    }
+  }
+}
